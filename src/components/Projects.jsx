@@ -3,22 +3,22 @@ import './Projects.css';
 
 const projects = [
   {
-    name: 'Secure Blockchain System',
-    image: require('../assets/project1.png'),
-    technologies: 'Java, Spring Boot, MongoDB, Blockchain',
+    name: 'Secure Ledger for Property-Registry',
+    image: require('../assets/registry.png'),
+    technologies: 'MERN- Stack, Javascript ,Blockchain',
     sourceCode: 'https://github.com/yourusername/secure-blockchain',
   },
   {
-    name: 'Employee Management Portal',
-    image: require('../assets/project2.jpg'),
-    technologies: 'ReactJS, Node.js, Express, MongoDB',
-    sourceCode: 'https://github.com/yourusername/employee-portal',
+    name: 'Medi-Track',
+    image: require('../assets/project1.png'),
+    technologies: 'HTML,CSS,JavaScript,MySql',
+    sourceCode: 'https://github.com/Snehal2004/Meditrack',
   },
   {
-    name: 'Weather Forecast App',
-    image: require('../assets/project3.jpg'),
-    technologies: 'HTML, CSS, JavaScript, OpenWeather API',
-    sourceCode: 'https://github.com/yourusername/weather-app',
+    name: 'Shop-Me',
+    image: require('../assets/shop.jpg'),
+    technologies: 'HTML, CSS, JavaScript,React',
+    sourceCode: 'https://github.com/yourusername/ecommerce',
   },
 ];
 
