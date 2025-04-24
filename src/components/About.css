@@ -1,0 +1,34 @@
+.about-section {
+    display: flex;
+    padding: 30px 40px;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    flex-wrap: wrap; 
+    color: black;/* for mobile responsiveness */
+  }
+  
+  .about-animation {
+    width: 500px;   /* was 300px or 500px */
+    height: 500px; /* increased size */
+  }
+  
+  .about-content {
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    
+  }
+  
+  .about-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+    color: black;
+  }
+  

@@ -1,0 +1,124 @@
+.experience-section {
+    background: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .experience-title {
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    color: #1e293b;
+    font-weight: 700;
+    background: linear-gradient(to right, #4f46e5, #06b6d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(to bottom, #06b6d4, #4f46e5);
+  }
+  
+  .timeline-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    position: relative;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideInUp 0.8s ease forwards;
+  }
+  
+  .timeline-item:nth-child(even) {
+    justify-content: flex-end;
+  }
+  
+  .timeline-dot {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 22px;
+    height: 22px;
+    background: radial-gradient(circle, #06b6d4, #4f46e5);
+    border: 5px solid white;
+    border-radius: 50%;
+    z-index: 2;
+    top: 0;
+    box-shadow: 0 0 10px rgba(79, 70, 229, 0.4);
+  }
+  
+  .timeline-content {
+    background: #ffffff;
+    padding: 20px 25px;
+    border-radius: 10px;
+    width: 330px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+    position: relative;
+    z-index: 2;
+    border-left: 6px solid #4f46e5;
+  }
+  
+  .timeline-content h3 {
+    margin: 0 0 8px;
+    color:rgb(174, 0, 255);
+    
+    font-size: 1.2rem;
+  }
+  
+  .timeline-content span {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 500;
+  }
+  
+  .timeline-content p {
+    margin-top: 10px;
+    color: black;
+    text-align: justify;
+    
+    line-height: 1.6;
+    font-size: 17px;
+  }
+  
+  @keyframes slideInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .timeline::before {
+      left: 8px;
+    }
+  
+    .timeline-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .timeline-dot {
+      left: 0;
+      transform: translateX(0);
+    }
+  
+    .timeline-content {
+      width: 100%;
+      margin-left: 30px;
+    }
+  }
+  
